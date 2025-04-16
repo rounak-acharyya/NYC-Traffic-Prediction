@@ -1,4 +1,4 @@
-Project Title : Create software using AI and ML that helps clear traffic for ambulances and other emergency vehicles by analyzing live traffic data, predicting jams, and giving suggestions to traffic authorities for quick and efficient route management.
+# Emergency-Traffic-Management-And-Congestion-Prediction-Using-ML
 
 Project Description : This project leverages Machine Learning (ML) and Artificial Intelligence (AI) to optimize traffic management for emergency vehicles by predicting congestion and suggesting real-time route adjustments. The model is trained using NYC Open Data and employs a Random Forest Regressor (RFR) for traffic volume prediction.
 
