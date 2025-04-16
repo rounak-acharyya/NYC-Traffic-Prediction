@@ -17,6 +17,9 @@ This project leverages **Machine Learning (ML)** and **Artificial Intelligence (
 
 ## 📊 Dataset
 
+
+![image](https://github.com/user-attachments/assets/b0513800-fee7-4eb3-ad18-d647849e7a61)
+
 🔗 [NYC Traffic Count Data (Google Drive)](https://drive.google.com/file/d/1I5-g3CwnxFc0TAFHvXtAtKYArOAN-I2a/view)  
 📁 Source: New York City Department of Transportation (NYC DOT)
 
