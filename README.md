@@ -1,8 +1,10 @@
 # Emergency-Traffic-Management-And-Congestion-Prediction-Using-ML
 
-Project Description : This project leverages Machine Learning (ML) and Artificial Intelligence (AI) to optimize traffic management for emergency vehicles by predicting congestion and suggesting real-time route adjustments. The model is trained using NYC Open Data and employs a Random Forest Regressor (RFR) for traffic volume prediction.
+# Project Description 
 
-How It Works? 
+This project leverages Machine Learning (ML) and Artificial Intelligence (AI) to optimize traffic management for emergency vehicles by predicting congestion and suggesting real-time route adjustments. The model is trained using NYC Open Data and employs a Random Forest Regressor (RFR) for traffic volume prediction.
+
+# How It Works? 
 
 1️. Preprocess historical traffic data, including features such as timestamp, geographic coordinates, borough, direction, and traffic volume.
 
@@ -13,7 +15,7 @@ How It Works?
 4️. Predict congestion levels dynamically and provide recommendations to traffic authorities for deploying emergency lanes or taking appropriate traffic control measures.
 
 
-Dataset: https://drive.google.com/file/d/1I5-g3CwnxFc0TAFHvXtAtKYArOAN-I2a/view  [Traffic Count data by New York City Department of Transportation]
+# Dataset: https://drive.google.com/file/d/1I5-g3CwnxFc0TAFHvXtAtKYArOAN-I2a/view  [Traffic Count data by New York City Department of Transportation]
 
 Video: https://drive.google.com/file/d/19Vvu65Da6sQyRKjxz7ESfTelNp3G5Tdt/view?usp=sharing
 
