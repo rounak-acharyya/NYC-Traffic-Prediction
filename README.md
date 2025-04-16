@@ -15,16 +15,20 @@ This project leverages Machine Learning (ML) and Artificial Intelligence (AI) to
 4️. Predict congestion levels dynamically and provide recommendations to traffic authorities for deploying emergency lanes or taking appropriate traffic control measures.
 
 
-# Dataset: https://drive.google.com/file/d/1I5-g3CwnxFc0TAFHvXtAtKYArOAN-I2a/view  [Traffic Count data by New York City Department of Transportation]
+# Dataset
 
-Video: https://drive.google.com/file/d/19Vvu65Da6sQyRKjxz7ESfTelNp3G5Tdt/view?usp=sharing
+https://drive.google.com/file/d/1I5-g3CwnxFc0TAFHvXtAtKYArOAN-I2a/view  [Traffic Count data by New York City Department of Transportation]
 
-Architectural diagram:
+# Video demonstration
+
+https://drive.google.com/file/d/19Vvu65Da6sQyRKjxz7ESfTelNp3G5Tdt/view?usp=sharing
+
+# Architectural diagram:
 
 ![arch diagram](https://github.com/user-attachments/assets/0f1c0c94-8e16-4a8a-80aa-14723bd966f7)
 
 
-References:
+# References:
 
 - [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
 
