@@ -32,7 +32,8 @@ This project leverages **Machine Learning (ML)** and **Artificial Intelligence (
 
 ## 🏗️ Architectural Diagram
 
-![Architectural Diagram](https://github.com/user-attachments/assets/0f1c0c94-8e16-4a8a-80aa-14723bd966f7)
+![WhatsApp Image 2025-03-31 at 16 02 04_790d37df](https://github.com/user-attachments/assets/37f8f626-530f-4158-b252-e4445fa3398d)
+
 
 ---
 
