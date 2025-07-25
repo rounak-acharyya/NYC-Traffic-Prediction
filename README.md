@@ -24,11 +24,6 @@ This project leverages **Machine Learning (ML)** and **Artificial Intelligence (
 
 ---
 
-## 🎥 Video Demonstration
-
-▶️ [Click to Watch Demo](https://drive.google.com/file/d/19Vvu65Da6sQyRKjxz7ESfTelNp3G5Tdt/view?usp=sharing)
-
----
 
 ## 🏗️ Architectural Diagram
 
