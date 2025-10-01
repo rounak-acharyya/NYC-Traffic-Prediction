@@ -1,4 +1,4 @@
-# Emergency-Traffic-Management-And-Congestion-Prediction-Using-ML
+# Spatio-Temporal Traffic Telemetry Analysis and Prediction System for Emergency Services
 
 ## 🚦 Project Description
 
