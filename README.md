@@ -17,13 +17,6 @@ In major metropolitan centers like New York City, emergency vehicles face critic
 2. **High-Fidelity Traffic Flow Regression Engine:** Estimates exact continuous vehicle volume (**R² = 0.8079, MAE = 29.65**), achieving a 51% reduction in error over baselines.
 3. **Spatial Sensor Capacity Registry & KDTree:** Pre-indexes historical capacity baselines for all **14,950 NYC DOT street sensors**, resolving any GPS coordinate to its nearest sensor in **0.02 milliseconds**.
 
----
-
-## 👥 AI/ML & Data Analytics Team (Team 7)
-
-- **Rounak Acharyya** (23BCE7957)
-- **Lakshya Parashar** (23BCE8333)
-- **Gavini Sai Geeteswa Sudarshan** (23BCE8626)
 
 ---
 
