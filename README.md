@@ -1,14 +1,5 @@
 # 🚑 Spatio-Temporal Traffic Telemetry Analysis & Dual-Engine Prediction System for Emergency Services
 
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![React](https://img.shields.io/badge/React-18.0+-61DAFB.svg?logo=react&logoColor=black)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-5.0+-646CFF.svg?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Classifier Accuracy](https://img.shields.io/badge/Classifier_Accuracy-92.82%25-brightgreen.svg)]()
-[![Classifier ROC-AUC](https://img.shields.io/badge/ROC--AUC-0.9752-blueviolet.svg)]()
-[![Regressor R2](https://img.shields.io/badge/Regressor_R%C2%B2-0.8079-blue.svg)]()
-
----
-
 ## 📊 Dataset Description & Specifications
 
 ![Dataset Preview](https://github.com/user-attachments/assets/b0513800-fee7-4eb3-ad18-d647849e7a61)
@@ -48,14 +39,6 @@ In major metropolitan centers like New York City, emergency vehicles face critic
 4️⃣ **Real-Time GPS Tracking & Corridor Prioritization:** Track ambulance and emergency vehicle coordinates along live routes to dynamically evaluate congestion severity.  
 5️⃣ **Emergency Authority Action Advisories:** Generate real-time actionable recommendations (Green Wave traffic signal synchronization, intersection pre-clearance, and dedicated emergency lane deployment).  
 6️⃣ **Interactive Full-Stack Visualization:** Visualize insights through a responsive React dashboard, Leaflet map routing, and an executed Jupyter Notebook.
-
----
-
-## 👥 AI/ML & Data Analytics Team (Team 7)
-
-- **Rounak Acharyya** (23BCE7957)
-- **Lakshya Parashar** (23BCE8333)
-- **Gavini Sai Geeteswa Sudarshan** (23BCE8626)
 
 ---
 
