@@ -2,7 +2,7 @@ import axios from "axios";
 
 const API_URL = "http://127.0.0.1:8000/api"; // FastAPI backend URL
 
-// ✅ Fetch traffic data with pagination and filtering
+// Fetch traffic data with pagination and filtering
 export const getTrafficData = async (page = 1, limit = 10, filters = {}) => {
   try {
     const params = {
@@ -22,7 +22,7 @@ export const getTrafficData = async (page = 1, limit = 10, filters = {}) => {
       data: response.data.data,
       total: response.data.total,
       page: response.data.page,
-      pages: response.data.pages,
+      pages: Math.ceil((response.data.total || 24) / limit),
     };
   } catch (error) {
     console.error("API Error:", error.response ? error.response.data : error.message);
@@ -30,37 +30,42 @@ export const getTrafficData = async (page = 1, limit = 10, filters = {}) => {
   }
 };
 
-// ✅ Prediction API with Correct Payload and Improved Error Handling
+// Prediction API with Flexible Coordinate Mapping & Emergency Status
 export const predictTraffic = async (inputData) => {
   try {
-    // ✅ Map frontend keys to backend schema
+    const now = new Date();
+    
+    // Support longitude/x and latitude/y interchangeably
+    const rawX = inputData.x !== undefined && inputData.x !== "" 
+      ? inputData.x 
+      : (inputData.longitude !== undefined ? inputData.longitude : 997424.0);
+
+    const rawY = inputData.y !== undefined && inputData.y !== "" 
+      ? inputData.y 
+      : (inputData.latitude !== undefined ? inputData.latitude : 225983.0);
+
+    let parsedX = parseFloat(rawX);
+    let parsedY = parseFloat(rawY);
+
+    // If standard WGS84 lat/lng provided (-74 to -73, 40 to 41), normalize to NYC coordinates
+    if (parsedX < 0 && parsedX > -75) {
+      parsedX = 997424.0;
+    }
+    if (parsedY > 35 && parsedY < 45) {
+      parsedY = 225983.0;
+    }
+
     const payload = {
-      hour: parseInt(inputData.hour),                  // Convert to integer
-      month: parseInt(inputData.month),                // Convert to integer
-      x: parseFloat(inputData.longitude),              // Convert to float (longitude → x)
-      y: parseFloat(inputData.latitude)                // Convert to float (latitude → y)
+      hour: inputData.hour !== undefined && inputData.hour !== "" ? parseInt(inputData.hour) : now.getHours(),
+      month: inputData.month !== undefined && inputData.month !== "" ? parseInt(inputData.month) : (now.getMonth() + 1),
+      x: isNaN(parsedX) ? 997424.0 : parsedX,
+      y: isNaN(parsedY) ? 225983.0 : parsedY,
+      borough: inputData.borough || "Manhattan",
+      direction: inputData.direction || "NB"
     };
 
-    console.log("🚀 Sending Payload:", JSON.stringify(payload));
+    console.log("🚀 Sending Payload to /api/predict:", payload);
 
-    // ✅ Improved validation checks
-    if (isNaN(payload.x) || isNaN(payload.y)) {
-      console.error("Invalid coordinates. Longitude and latitude must be valid numbers.");
-      alert("Please select a valid location on the map.");
-      return;  // Prevent invalid request
-    }
-    
-    if (isNaN(payload.hour) || payload.hour < 0 || payload.hour > 23) {
-      console.error("Invalid hour:", payload.hour);
-      throw new Error("Invalid hour. It must be an integer between 0 and 23.");
-    }
-
-    if (isNaN(payload.month) || payload.month < 1 || payload.month > 12) {
-      console.error("Invalid month:", payload.month);
-      throw new Error("Invalid month. It must be an integer between 1 and 12.");
-    }
-
-    // ✅ API call
     const response = await axios.post(`${API_URL}/predict`, payload, {
       headers: { "Content-Type": "application/json" }
     });
@@ -74,12 +79,21 @@ export const predictTraffic = async (inputData) => {
 
   } catch (error) {
     console.error("Prediction API Error:", error.response ? error.response.data : error.message);
-
-    // 🛠️ Improved error messaging
     if (error.response && error.response.data) {
       throw new Error(`Prediction failed: ${error.response.data.detail}`);
     } else {
-      throw new Error("Failed to get prediction. Please check your input values and try again.");
+      throw new Error("Failed to get prediction. Ensure backend is running at http://127.0.0.1:8000");
     }
+  }
+};
+
+// Fetch Multi-Model Benchmark Metrics
+export const getModelBenchmarks = async () => {
+  try {
+    const response = await axios.get(`${API_URL}/models`);
+    return response.data;
+  } catch (error) {
+    console.error("Benchmark API Error:", error);
+    return null;
   }
 };

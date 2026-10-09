@@ -5,3 +5,10 @@ uvicorn
 joblib
 pandas
 scikit-learn
+lightgbm
+xgboost
+pyarrow
+matplotlib
+seaborn
+nbformat
+nbconvert

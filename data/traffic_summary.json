@@ -1,0 +1,183 @@
+{
+  "total_records": 2026155,
+  "mean_volume": 107.41999816894531,
+  "max_volume": 5409.0,
+  "congested_ratio": 0.2312286078804435,
+  "borough_stats": {
+    "Bronx": 107.17584991455078,
+    "Brooklyn": 82.5719985961914,
+    "Manhattan": 145.63375854492188,
+    "Queens": 108.08932495117188,
+    "Staten Island": 74.13157653808594
+  },
+  "hourly_congestion": [
+    {
+      "time": "00:00",
+      "congestion": 37.400001525878906,
+      "avgSpeed": 31.9,
+      "density": 44.9,
+      "accidents": 3
+    },
+    {
+      "time": "01:00",
+      "congestion": 26.200000762939453,
+      "avgSpeed": 35.8,
+      "density": 31.4,
+      "accidents": 2
+    },
+    {
+      "time": "02:00",
+      "congestion": 19.5,
+      "avgSpeed": 38.2,
+      "density": 23.4,
+      "accidents": 2
+    },
+    {
+      "time": "03:00",
+      "congestion": 17.100000381469727,
+      "avgSpeed": 39.0,
+      "density": 20.5,
+      "accidents": 1
+    },
+    {
+      "time": "04:00",
+      "congestion": 20.700000762939453,
+      "avgSpeed": 37.8,
+      "density": 24.8,
+      "accidents": 2
+    },
+    {
+      "time": "05:00",
+      "congestion": 32.79999923706055,
+      "avgSpeed": 33.5,
+      "density": 39.4,
+      "accidents": 3
+    },
+    {
+      "time": "06:00",
+      "congestion": 56.599998474121094,
+      "avgSpeed": 25.2,
+      "density": 67.9,
+      "accidents": 5
+    },
+    {
+      "time": "07:00",
+      "congestion": 78.19999694824219,
+      "avgSpeed": 17.6,
+      "density": 93.8,
+      "accidents": 6
+    },
+    {
+      "time": "08:00",
+      "congestion": 84.4000015258789,
+      "avgSpeed": 15.5,
+      "density": 101.3,
+      "accidents": 7
+    },
+    {
+      "time": "09:00",
+      "congestion": 79.5999984741211,
+      "avgSpeed": 17.1,
+      "density": 95.5,
+      "accidents": 6
+    },
+    {
+      "time": "10:00",
+      "congestion": 78.5,
+      "avgSpeed": 17.5,
+      "density": 94.2,
+      "accidents": 6
+    },
+    {
+      "time": "11:00",
+      "congestion": 81.0,
+      "avgSpeed": 16.7,
+      "density": 97.2,
+      "accidents": 6
+    },
+    {
+      "time": "12:00",
+      "congestion": 83.80000305175781,
+      "avgSpeed": 15.7,
+      "density": 100.6,
+      "accidents": 7
+    },
+    {
+      "time": "13:00",
+      "congestion": 87.19999694824219,
+      "avgSpeed": 14.5,
+      "density": 104.6,
+      "accidents": 7
+    },
+    {
+      "time": "14:00",
+      "congestion": 93.0999984741211,
+      "avgSpeed": 12.4,
+      "density": 111.7,
+      "accidents": 7
+    },
+    {
+      "time": "15:00",
+      "congestion": 98.0999984741211,
+      "avgSpeed": 10.7,
+      "density": 117.7,
+      "accidents": 8
+    },
+    {
+      "time": "16:00",
+      "congestion": 99.5,
+      "avgSpeed": 10.2,
+      "density": 119.4,
+      "accidents": 8
+    },
+    {
+      "time": "17:00",
+      "congestion": 100.0,
+      "avgSpeed": 10.0,
+      "density": 120.0,
+      "accidents": 8
+    },
+    {
+      "time": "18:00",
+      "congestion": 95.0999984741211,
+      "avgSpeed": 11.7,
+      "density": 114.1,
+      "accidents": 8
+    },
+    {
+      "time": "19:00",
+      "congestion": 85.9000015258789,
+      "avgSpeed": 14.9,
+      "density": 103.1,
+      "accidents": 7
+    },
+    {
+      "time": "20:00",
+      "congestion": 74.5,
+      "avgSpeed": 18.9,
+      "density": 89.4,
+      "accidents": 6
+    },
+    {
+      "time": "21:00",
+      "congestion": 65.80000305175781,
+      "avgSpeed": 22.0,
+      "density": 79.0,
+      "accidents": 5
+    },
+    {
+      "time": "22:00",
+      "congestion": 57.900001525878906,
+      "avgSpeed": 24.7,
+      "density": 69.5,
+      "accidents": 5
+    },
+    {
+      "time": "23:00",
+      "congestion": 48.900001525878906,
+      "avgSpeed": 27.9,
+      "density": 58.7,
+      "accidents": 4
+    }
+  ]
+}

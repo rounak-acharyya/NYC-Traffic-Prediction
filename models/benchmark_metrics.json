@@ -1,0 +1,126 @@
+{
+  "champion_classifier": "LightGBM Classifier",
+  "champion_classifier_accuracy": 92.82,
+  "champion_classifier_roc_auc": 0.9752,
+  "champion_regressor": "Random Forest (RFR)",
+  "champion_regressor_r2": 0.8079,
+  "timestamp": "2026-10-09 11:55:56",
+  "features": [
+    "hour",
+    "month",
+    "sin_hour",
+    "cos_hour",
+    "sin_month",
+    "cos_month",
+    "is_rush_hour",
+    "day_of_week",
+    "is_weekend",
+    "X",
+    "Y",
+    "seg_mean_vol",
+    "seg_std_vol",
+    "borough_Bronx",
+    "borough_Brooklyn",
+    "borough_Manhattan",
+    "borough_Queens",
+    "borough_Staten Island",
+    "direction_EB",
+    "direction_NB",
+    "direction_SB",
+    "direction_WB"
+  ],
+  "classification_benchmarks": [
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 89.52,
+      "Precision": 0.8636,
+      "Recall": 0.6473,
+      "F1 Score": 0.8896,
+      "ROC-AUC": 0.9402
+    },
+    {
+      "Model": "Decision Tree",
+      "Accuracy": 91.42,
+      "Precision": 0.8154,
+      "Recall": 0.8109,
+      "F1 Score": 0.9141,
+      "ROC-AUC": 0.9392
+    },
+    {
+      "Model": "Random Forest (RFC)",
+      "Accuracy": 92.71,
+      "Precision": 0.8518,
+      "Recall": 0.8271,
+      "F1 Score": 0.9267,
+      "ROC-AUC": 0.9738
+    },
+    {
+      "Model": "HistGradientBoosting",
+      "Accuracy": 92.6,
+      "Precision": 0.8464,
+      "Recall": 0.8291,
+      "F1 Score": 0.9257,
+      "ROC-AUC": 0.974
+    },
+    {
+      "Model": "LightGBM Classifier",
+      "Accuracy": 92.82,
+      "Precision": 0.8529,
+      "Recall": 0.8316,
+      "F1 Score": 0.9279,
+      "ROC-AUC": 0.9752
+    },
+    {
+      "Model": "XGBoost Classifier",
+      "Accuracy": 92.75,
+      "Precision": 0.8515,
+      "Recall": 0.8297,
+      "F1 Score": 0.9271,
+      "ROC-AUC": 0.9744
+    }
+  ],
+  "regression_benchmarks": [
+    {
+      "Model": "Ridge Baseline",
+      "MAE": 45.894,
+      "RMSE": 86.144,
+      "R2 Score": 0.6963,
+      "Latency_ms": 0.0008
+    },
+    {
+      "Model": "Decision Tree",
+      "MAE": 33.955,
+      "RMSE": 87.416,
+      "R2 Score": 0.6872,
+      "Latency_ms": 0.0275
+    },
+    {
+      "Model": "Random Forest (RFR)",
+      "MAE": 29.647,
+      "RMSE": 68.504,
+      "R2 Score": 0.8079,
+      "Latency_ms": 0.1309
+    },
+    {
+      "Model": "HistGradientBoosting",
+      "MAE": 31.172,
+      "RMSE": 70.92,
+      "R2 Score": 0.7941,
+      "Latency_ms": 0.0139
+    },
+    {
+      "Model": "LightGBM Regressor",
+      "MAE": 29.811,
+      "RMSE": 69.275,
+      "R2 Score": 0.8036,
+      "Latency_ms": 0.0203
+    },
+    {
+      "Model": "XGBoost Regressor",
+      "MAE": 29.803,
+      "RMSE": 68.641,
+      "R2 Score": 0.8071,
+      "Latency_ms": 0.0213
+    }
+  ]
+}
